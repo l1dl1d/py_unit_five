@@ -9,12 +9,19 @@ def count(first, last):
     :param second: The final number. Must be included
     :return: A string containing the numbers
     """
-    pass # make sure to delete this line when you write your own function
 
-
+def counts(a, b):
+    if a > b:
+        test = ""
+        for x in range(a, b):
+            test += str(x) +" "
+    else:
+        test = ""
+        for x in range(a, b, -1):
+            test += str(x) + " "
+    return test
 def main():
-    print(count(0, 6))
-
+    print(counts(0, 6))
 
 if __name__ == '__main__':
     main()
