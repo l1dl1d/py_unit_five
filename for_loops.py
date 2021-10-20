@@ -13,15 +13,14 @@ def count(first, last):
 def counts(a, b):
     if a > b:
         test = ""
-        for x in range(a, b):
-            test += str(x) +" "
+        for x in range(a, b, -1):
+            test += str(x) + " "
     else:
         test = ""
-        for x in range(a, b, -1):
+        for x in range(a, b):
             test += str(x) + " "
     return test
 def main():
-    print(counts(0, 6))
-
+    print(counts(0, 15))
 if __name__ == '__main__':
     main()
