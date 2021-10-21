@@ -14,13 +14,13 @@ class MyTestCase(unittest.TestCase):
     def test_multiplication_tables(self):
         self.assertEqual("6 12 18 24 30 36 42 48 54 60 66 72 ", multiplication_table(6))
         # Create two additional tests underneath this line
-        self.assertEqual("")
+        self.assertEqual("-6 -12 -18 -24 -30 -36 -42 -48 -54 -60 -66 -72 ", multiplication_table(-6))
     def test_fibonacci(self):
         self.assertEqual("1 1 2 3 5 ", fibonacci(5))
         self.assertEqual("1 ", fibonacci(1))
         self.assertEqual("1 1 ", fibonacci(2))
         # Create two additional tests underneath this line
-
+        self.assertEqual("", fibonacci(8))
     def test_multiples(self):
         self.assertEqual(233168, get_sum(1000))
 
