@@ -8,4 +8,4 @@ def multiplication_table(number):
     for x in range(1, 13):
         test += str(number*x) + " "
     return test
-print(multiplication_table(8))
+print(multiplication_table(6))
