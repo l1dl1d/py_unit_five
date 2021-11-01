@@ -7,7 +7,7 @@ import random
 def get_number():
     """
     this function gets a random number and stores it in the variable num
-    :return:
+    :return: returns a random number between 1 and 100
     """
     num = random.randint(1, 100)
     return num
@@ -15,7 +15,7 @@ def get_number():
 def get_guess():
     """
     this function prevents players from going outside of the 1 to 100 range when guessing a number
-    :return:
+    :return: returns number that is guessed between 1 and 100
     """
     while True:
         x = str(input("guess a number between one and one hundred"))
@@ -24,7 +24,7 @@ def get_guess():
 def main():
     """
     this function runs the entire game and calls all the other functions to put everything together
-    :return:
+    :return: returns the entire game with everything put together
     """
     guesses_for_all_games = 0
     for y in range(3):
